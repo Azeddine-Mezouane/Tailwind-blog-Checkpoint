@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="l.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      window.addEventListener("load", () => {
+        AOS.init();
+      });
+    </script>
+
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+
+    <script src="l.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              costum: ["magica"],
+              Poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Oaken-blog</title>
+  </head>
+  <body>
+    <!-- <div class="!z-0   w-[100%] absolute top-0  h-[400px]  bg-[#FFF0E3] opacity-80 "></div> -->
+
+    <nav class="!z-1 flex items-center py-7 justify-around bg-[#FFF0E3]">
+      <div class="logo">
+        <img class="w-[50%]" src="Assets/images/logo.png" alt="" />
+      </div>
+      <div>
+        <ul class="flex gap-7 max-md:hidden font-Poppins font-light">
+          <li class="font-medium">Accueil</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="absolute md:hidden right-10">
+        <img src="Assets/images/menu.svg" alt="" />
+      </div>
+    </nav>
+
+    <!----------------------------------------- hero -------------------------------------------->
+
+    <section
+      class="md:px-10 px-5 z-1 !z-0 w-[100%] relative h-[10vw] bg-[#FFF0E3]"
+    >
+      <div class="w-[100%] absolute -bottom-[5vw] left-[70px]">
+        <h1 class="font-costum text-[10vw] text-[#D3A57D]">Blog</h1>
+      </div>
+    </section>
+    <!----------------------------------------- Article ------------------------------------------>
+    <section data-aos="fade-up" class="md:px-10 px-5">
+      <div
+        class="flex justify-between max-md:flex-col max-md:gap-12 max-md:items-center p-10 mt-[5vw] rounded-[20px] max-md:rounded-[10px]"
+      >
+        <div
+          class="flex max-md:flex-col gap-5 justify-evenly content-center w-[100%]"
+        >
+          <div
+            class="card w-[300px] h-[350px] rounded-3xl bg-[#F2E1D2] overflow-hidden"
+          >
+            <img src="Assets/images/image1.jpg" alt="" />
+            <h1
+              class="font-bold px-5 text-[21px] mt-[12px] leading-[25px] text-[#584129]"
+            >
+              L'élégance du bois dans les espaces modernes
+            </h1>
+            <p class="font-light px-5 text-[11px] mt-[6px] text-[#584129]">
+              Comment intégrer le bois de luxe dans les intérieurs contemporains
+              pour un design épuré et chaleureux.
+            </p>
+          </div>
+          <div
+            class="card w-[300px] h-[350px] rounded-3xl bg-[#F2E1D2] overflow-hidden"
+          >
+            <img src="Assets/images/image2.jpg" alt="" />
+            <h1
+              class="font-bold px-5 text-[21px] mt-[12px] leading-[25px] text-[#584129]"
+            >
+              Fonctionnalité et design : L'équilibre parfait
+            </h1>
+            <p class="font-light px-5 text-[11px] mt-[6px] text-[#584129]">
+              Découvrez comment Oaken redéfinit le luxe avec des objets
+              pratiques et esthétiques.
+            </p>
+          </div>
+          <div
+            class="card w-[300px] h-[350px] rounded-3xl bg-[#F2E1D2] overflow-hidden"
+          >
+            <img src="Assets/images/image3.jpg" alt="" />
+            <h1
+              class="font-bold px-5 text-[21px] mt-[12px] leading-[25px] text-[#584129]"
+            >
+              Durabilité et artisanat : Le choix Oaken
+            </h1>
+            <p class="font-light px-5 text-[11px] mt-[6px] text-[#584129]">
+              Pourquoi choisir des produits en bois durable pour un quotidien
+              raffiné.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------- Catégories ------------------------------------------>
+    <section>
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="font-costum mt-[3vw] text-[3.5vw] max-md:text-[6vw]">
+          Catégories
+        </h1>
+        <div class="flex mt-4">
+          <div class="flex flex-col">
+            <div class="grid max-md:grid-cols-1 grid-cols-4 gap-5">
+              <div
+                class="w-[300px] h-[100px] rounded-[80px] relative overflow-hidden"
+              >
+                <img
+                  src="Assets/images/Décoration.png"
+                  alt="Background"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-[#D3A57D] opacity-70"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span
+                    class="text-white font-costum text-[2vw] max-md:text-[6vw]"
+                    >Décoration</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="w-[300px] h-[100px] rounded-[80px] relative overflow-hidden"
+              >
+                <img
+                  src="Assets/images/Durable.png"
+                  alt="Background"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-[#D3A57D] opacity-70"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span
+                    class="text-white font-costum text-[2vw] max-md:text-[6vw]"
+                    >Durable</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="w-[300px] h-[100px] rounded-[80px] relative overflow-hidden"
+              >
+                <img
+                  src="Assets/images/Artisanat.png"
+                  alt="Background"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-[#D3A57D] opacity-70"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span
+                    class="text-white font-costum text-[2vw] max-md:text-[6vw]"
+                    >Artisanat</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="w-[300px] h-[100px] rounded-[80px] relative overflow-hidden"
+              >
+                <img
+                  src="Assets/images/Tendances.png"
+                  alt="Background"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-[#D3A57D] opacity-70"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span
+                    class="text-white font-costum text-[2vw] max-md:text-[6vw]"
+                    >Tendances</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid max-md:grid-cols-1 grid-cols-2 gap-5 mt-5">
+          <div
+            class="w-[330px] max-md:w-[300px] h-[100px] rounded-[80px] relative overflow-hidden"
+          >
+            <img
+              src="Assets/images/Inspirations.png"
+              alt="Background"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-[#D3A57D] opacity-70"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-white font-costum text-[2vw] max-md:text-[6vw]"
+                >Inspirations</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="w-[330px] max-md:w-[300px] h-[100px] rounded-[80px] relative overflow-hidden"
+          >
+            <img
+              src="Assets/images/Luxe.png"
+              alt="Background"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-[#D3A57D] opacity-70"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-white font-costum text-[2vw] max-md:text-[6vw]"
+                >Luxe</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------- Articles  récents ------------------------------------------>
+    <div class="flex flex-col items-center justify-center mt-5 gap-6">
+      <h1 class="font-costum mt-[3vw] text-[3.5vw] max-md:text-[6vw]">
+        Articles récents
+      </h1>
+      <div class="flex mt-4 card1">
+        <div
+          class="d bg-[#F2E1D2] w-[90vw] md:h-[250px] flex rounded-3xl overflow-hidden max-md:flex-col"
+        >
+          <div class="imf">
+            <img class="-translate-y-14" src="Assets/images/t-1.webp" alt="" />
+          </div>
+          <div class="texxt flex-col items-center justify-center">
+            <div class="info md:translate-y-1/2 max-md:py-4">
+              <div class="date px-5 flex gap-2 font-light max-md:-mt-12">
+                <img src="Assets/images/date.svg" alt="" />
+                <h2 class="text-[16px]">
+                  Publié le <span class="font-medium">15</span> novembre
+                  <span class="font-medium">2024</span>
+                </h2>
+              </div>
+              <h1
+                class="font-bold px-5 text-3xl max-md:text-xl mt-[5px] leading-[25px] text-[#584129] max-md:w-[95vw]"
+              >
+                L'élégance du bois dans les espaces modernes
+              </h1>
+              <p
+                class="font-light px-5 text-[18px] max-md:text-[14px] max-md:w-[95vw] mt-[6px] w-[750px] text-[#584129]"
+              >
+                Découvrez comment le bois peut ajouter une touche naturelle et
+                élégante à vos espaces modernes, tout en offrant chaleur et
+                style
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="flex mt-4 card3">
+        <div
+          class="d bg-[#F2E1D2] w-[90vw] md:h-[250px] flex rounded-3xl overflow-hidden max-md:flex-col"
+        >
+          <div class="imf">
+            <img class="-translate-y-14" src="Assets/images/t-2.webp" alt="" />
+          </div>
+          <div class="texxt flex-col items-center justify-center">
+            <div class="info md:translate-y-1/2 max-md:py-4">
+              <div class="date px-5 flex gap-2 font-light max-md:-mt-12">
+                <img src="Assets/images/date.svg" alt="" />
+                <h2 class="text-[16px]">
+                  Publié le <span class="font-medium">20</span> novembre
+                  <span class="font-medium">2024</span>
+                </h2>
+              </div>
+              <h1
+                class="font-bold px-5 text-3xl max-md:text-xl mt-[5px] leading-[25px] text-[#584129] max-md:w-[95vw]"
+              >
+                Créer un intérieur chic avec des meubles en bois
+              </h1>
+              <p
+                class="font-light px-5 text-[18px] max-md:text-[14px] max-md:w-[95vw] mt-[6px] w-[750px] text-[#584129]"
+              >
+                Apprenez à choisir des meubles en bois qui s'intègrent
+                parfaitement dans une décoration intérieure moderne et chic
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="flex mt-4 card3">
+        <div
+          class="d bg-[#F2E1D2] w-[90vw] md:h-[250px] flex rounded-3xl overflow-hidden max-md:flex-col"
+        >
+          <div class="imf">
+            <img class="-translate-y-14" src="Assets/images/t-3.webp" alt="" />
+          </div>
+          <div class="texxt flex-col items-center justify-center">
+            <div class="info md:translate-y-1/2 max-md:py-4 max-md:-mt-12">
+              <div class="date px-5 flex gap-2 font-light">
+                <img src="Assets/images/date.svg" alt="" />
+                <h2 class="text-[16px]">
+                  Publié le <span class="font-medium">30</span> novembre
+                  <span class="font-medium">2024</span>
+                </h2>
+              </div>
+              <h1
+                class="font-bold px-5 text-[28px] max-md:text-xl mt-[5px] leading-[25px] text-[#584129] max-md:w-[95vw]"
+              >
+                Comment choisir le bois pour chaque type d'intérieur
+              </h1>
+              <p
+                class="font-light px-5 text-[18px] max-md:text-[14px] max-md:w-[95vw] mt-[6px] w-[750px] text-[#584129]"
+              >
+                Nos conseils pour sélectionner le type de bois le mieux adapté à
+                votre style et à l'ambiance de chaque pièce de votre maison
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------------- Contact ------------------------------------------>
+    <section>
+      <div
+        class="overflow-hidden max-md:rounded-[10px] rounded-[20px] max-md:w-[90vw] md:max-w-[50vw] mx-auto my-[5vw] font-poppins bg-[#F2E1D2]"
+      >
+        <div class="p-8">
+          <h2
+            class="font-costum md:text-[30px] text-[20px] font-bold text-[#584129]"
+          >
+            Contact
+          </h2>
+
+          <form>
+            <div class="space-y-4 mt-8">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="placeholder-gray-600 px-2 py-3 bg-transparent text-[#584129] w-full text-sm border-b border-gray-800 focus:border-[#C68C5A] outline-none"
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                class="placeholder-gray-600 px-2 py-3 bg-transparent text-[#584129] w-full text-sm border-b border-gray-800 focus:border-[#C68C5A] outline-none"
+              />
+
+              <textarea
+                placeholder="Write Message"
+                class="placeholder-gray-600 px-2 pt-3 bg-transparent text-[#584129] w-full text-sm border-b border-gray-800 focus:border-[#C68C5A] outline-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="button"
+              class="mt-8 flex items-center justify-center text-sm w-full rounded-md px-6 py-3 tracking-wide text-gray-800 bg-[#D3A57D] hover:bg-[#C68C5A]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                fill="currectColor"
+                class="mr-2"
+                viewBox="0 0 548.244 548.244"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+                  clip-rule="evenodd"
+                  data-original="#000000"
+                />
+              </svg>
+              Envoyer un message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------- footer ------------------------------------------>
+
+    <footer class="h-[50px] bg-[#D3A57D] flex justify-center items-center">
+      <p class="text-[#584129] font-Poppins font-medium max-md:text-[13px]">
+        Azeddine Mezouane 2024 &copy; Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>
